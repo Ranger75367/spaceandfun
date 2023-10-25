@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Space</title>
+    <link rel="stylesheet" href="CSS.css" />
+    <script src="spaceJS.js"></script>
+</head>
+
+
+<body>
+    <h1 id="title">Our Solar System</h1>
+    <nav>
+        <strong>
+            <big>
+                <center>
+                    <ul>
+
+                        <li><a href="./Space.html"> Planet Information </a></li>
+                        <li><a href="./MiniGame.html"> MiniGame </a></li>
+                        <li><a href="./HumanExploration.html"> Human Exploration </a></li>
+
+
+                    </ul>
+                </center>
+            </big>
+        </strong>
+    </nav><br />
+
+    <div>
+        <h2>
+            How much would you weigh on another planet? Choose your Planet:
+            <select id="planetG" onchange="weightChange()">
+                <option></option>
+                <option value="28">The Sun</option>
+                <option value=".38">Mercury</option>
+                <option value=".91">Venus</option>
+                <option value="1">Earth</option>
+                <option value=".38">Mars</option>
+                <option value="2.53">Jupiter</option>
+                <option value="1.07">Saturn</option>
+                <option value=".91">Uranus</option>
+                <option value="1.15">Neptune</option>
+            </select>
+        </h2>
+    </div><br />
+    <div>Input your weight: <input type="number" id="weight" onchange="weightChange()" /> lbs.</div><br />
+    <div id="moonWeight"></div>
+
+
+    <aside id="planets">
+        <ul>
+            <li id="sun" onclick="sunClick()">Sun</li>
+            <li id="mercury" onclick="mercuryClick()">Mercury</li>
+            <li id="venus" onclick="venusClick()">Venus</li>
+            <li id="earth" onclick="earthClick()">Earth</li>
+            <li id="mars" onclick="marsClick()">Mars</li>
+            <li id="jupiter" onclick="jupiterClick()">Jupiter</li>
+            <li id="saturn" onclick="saturnClick()">Saturn</li>
+            <li id="uranus" onclick="uranusClick()">Uranus</li>
+            <li id="neptune" onclick="neptuneClick()">Neptune</li>
+        </ul>
+    </aside>
+    <article>
+        <figure>
+            <iframe src="#" alt="" title="" id="planetImg"></iframe>
+            <figcaption id="planetNote">
+
+            </figcaption>
+        </figure>
+    </article>
+
+</body>
+</html>
